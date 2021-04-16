@@ -1,5 +1,5 @@
 {
-  "name": "passport-azure-ad-oauth2",
+  "name": "@outline/passport-azure-ad-oauth2",
   "version": "0.1.0",
   "description": "Passport strategy for authenticating with Azure AD using the OAuth 2.0 protocol.",
   "keywords": [
@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/auth0/passport-azure-ad-oauth2.git"
+    "url": "git://github.com/outline/passport-azure-ad-oauth2.git"
   },
   "bugs": {
-    "url": "http://github.com/auth0/passport-azure-ad-oauth2/issues"
+    "url": "http://github.com/outline/passport-azure-ad-oauth2/issues"
   },
   "author": {
     "name": "Auth0",
@@ -42,5 +42,5 @@
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec test/*.test.js"
   },
-  "homepage": "https://github.com/auth0/passport-azure-ad-oauth2"
+  "homepage": "https://github.com/outline/passport-azure-ad-oauth2"
 }
