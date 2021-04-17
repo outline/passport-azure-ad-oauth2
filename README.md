@@ -5,7 +5,7 @@ using the OAuth 2.0 protocol.
 
 ## Install
 
-    $ npm install passport-azure-ad-oauth2
+    $ npm install @outline/passport-azure-ad-oauth2
 
 ## Usage
 
@@ -46,16 +46,16 @@ function (accessToken, refresh_token, params, profile, done) {
 
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'azure_ad_oauth2'` strategy, to authenticate requests.
+Use `passport.authenticate()`, specifying the `'azure'` strategy, to authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/) application:
 
 ```javascript
 app.get('/auth/azureadoauth2',
-  passport.authenticate('azure_ad_oauth2'));
+  passport.authenticate('azure'));
 
 app.get('/auth/azureadoauth2/callback', 
-  passport.authenticate('azure_ad_oauth2', { failureRedirect: '/login' }),
+  passport.authenticate('azure', { failureRedirect: '/login' }),
   function (req, res) {
     // Successful authentication, redirect home.
     res.redirect('/');

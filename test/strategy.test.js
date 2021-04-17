@@ -1,8 +1,8 @@
-var expect                = require('chai').expect;
+var expect = require('chai').expect;
 var AzureAdOAuth2Strategy = require('..');
 
-describe('Strategy', function() {
-    
+describe('Strategy', function () {
+
   var strategy = new AzureAdOAuth2Strategy({
     clientID: 'abc123',
     clientSecret: 'shhh',
@@ -10,9 +10,9 @@ describe('Strategy', function() {
     resource: '00000002-0000-0000-c000-000000000000',
     tenant: 'contoso.onmicrosoft.com'
   },
-  function () {});
-  
-  it('should be named azure_ad_oauth2', function () {
-    expect(strategy.name).to.equal('azure_ad_oauth2');
+    function () { });
+
+  it('should be named azure', function () {
+    expect(strategy.name).to.equal('azure');
   });
 });
