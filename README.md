@@ -5,7 +5,7 @@ using the OAuth 2.0 protocol.
 
 ## Install
 
-    $ npm install @outline/passport-azure-ad-oauth2
+    $ npm install @outlinewiki/passport-azure-ad-oauth2
 
 ## Usage
 
